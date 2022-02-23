@@ -39,29 +39,7 @@ def findOne(message):
 
 @bot.message_handler(commands=['start'])
 def main(message):
-
-    # markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    # it1 = types.KeyboardButton('Москва')
-    # it2 = types.KeyboardButton('Киев')
-
-    # markup.add(it1, it2)
-    # reply_markup = markup
-    bot.send_message(message.chat.id, 'Привет. Для начала выбери свой город')
-
-
-# @bot.message_handler(content_types=['text'])
-# def choosing(message):
-#     global r
-#     if message.text == 'Москва':
-#         r = requests.get('https://sinoptik.ua/погода-москва')
-#         bot.send_message(message.chat.id,'Город выбран, теперь воспользуйся командами')
-#     elif message.text == 'Киев':
-#         r = requests.get('https://sinoptik.ua/погода-киев')
-#         bot.send_message(message.chat.id, 'Город выбран, теперь воспользуйся командами')
-#
-
-
-
+    bot.send_message(message.chat.id, 'Привет. Воспользуйся командами или введи команду /help')
 
 
 
